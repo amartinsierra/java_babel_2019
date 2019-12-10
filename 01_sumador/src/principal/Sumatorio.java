@@ -1,10 +1,15 @@
 package principal;
 
+import java.util.Scanner;
+
 public class Sumatorio {
 
 	public static void main(String[] args) {
-		int a=50;
-		int b=16;
+		Scanner sc=new Scanner(System.in);
+		System.out.println("Introduce un número ");
+		int a=sc.nextInt();
+		System.out.println("Introduce otro número ");
+		int b=sc.nextInt();
 		int menor=buscarMenor(a,b);
 		int mayor=buscarMayor(a,b);
 		System.out.println("Suma de pares "+sumaPares(menor, mayor));
